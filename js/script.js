@@ -1,10 +1,11 @@
-let main__button = document.querySelector(".main__button");
-let body = document.querySelector(".body");
-let main__changeColor = document.querySelector(".main__changeColor")
+{
+const main__button = document.querySelector(".main__button");
+const body = document.querySelector(".body");
+const main__changeColor = document.querySelector(".main__changeColor")
 // let dark = document.querySelector(".dark");
 
 
-main__button.addEventListener("click", () => {
+const OnChanegeBackgroundClick = () => {
     body.classList.toggle("dark");
 
     if (body.classList.contains("dark")) {
@@ -12,16 +13,11 @@ main__button.addEventListener("click", () => {
     } else {
         main__changeColor.innerText = "ciemny";
     }
-    // main__changeColor.innerText = body.classList.contains("dark") ? "jasny" : "ciemny" ;
 
-});
+// main__changeColor.innerText = body.classList.contains("dark") ? "jasny" : "ciemny" ;
+};
 
+main__button.addEventListener("click", OnChanegeBackgroundClick);
 
-
-// color.innerText = body.classList.contains("section__changeColor") ? "jasny" : "ciemny" ;
-
-if (body.classList.contains("dark")) {
-    main__changeColor.innerText = "jasny";
-} else {
-    main__changeColor.innerText = "ciemny";
 }
+
